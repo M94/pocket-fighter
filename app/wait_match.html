@@ -9,18 +9,72 @@
 	}
 	</style>
 	
-        <script type="text/javascript">
-            function main() {
-               img=document.getElementById("loader");
-               Ani=$("ani");
-               Ani.width=50;
-               Ani.height=50;
-               Ani.ctx=Ani.getContext('2d');
-               Ani.ctx.drawImage(img,0,0)
-            }
-        </script>
+        <script>
+
+
+    
+		var IntervalId;
+		
+		
+		function first() {
+		IntervalId = setInterval(ajax, 500);
+		
+		}
+		
+		function ajax() {
+				
+		
+			var xmlHttp = createXmlHttp();
+			
+			xmlHttp.onreadystatechange = function() {
+			
+				if (xmlHttp.readyState == 4) {
+					if (xmlHttp.responseText == '0') {
+						//no match found, do nothing?
+						
+					}
+					else if(xml.Http.responseText == '1') {
+						if (confirm("Accept Match?") == true) {
+							//goto match
+						} else {
+							//return to home screen
+							window.location.href ="/";
+						}
+					}
+					
+				}
+				
+			}
+			var param = document.getElementById("uid");
+			xmlHttp.open("POST", '/find_match', true); // Set up link for post request
+			xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+			xmlHttp.send(param); // Send parameters as post request
+			
+			
+			
+		}
+
+		// AJAX object creator
+		function createXmlHttp() {
+			var xmlhttp;
+			if (window.XMLHttpRequest) {
+				xmlhttp = new XMLHttpRequest();
+			} else {
+				xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			if (!(xmlhttp)) {
+				alert("Your browser does not support AJAX!");
+			}
+			return xmlhttp;
+		}
+		
+		
+		
+		</script>
+		
+		
     </head>
-    <body onload="main()" class="center">
+    <body onload="first()" class="center">
 		<p>Waiting for match...</p>
         <img id="loader" src="media/matchloader.gif">
         <canvas id="ani"></canvas>
