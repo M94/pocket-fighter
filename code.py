@@ -25,10 +25,10 @@ class MainPage(webapp2.RequestHandler):
 		
 app = webapp2.WSGIApplication([
 	('/', MainPage),
-	('/selectfighter', selectfighter.SelectFighter), # Handles the fighter select screen
-	('/processfighter', processfighter.ProcessFighter), # Handles the process for creating a fighter
-	#('/waitmatch', waitmatch.WaitMatch), # Handles the match waiting screen
-	#('/findmatch', findmatch.FindMatch), # Handles the process of finding a match
+	('/select_fighter', selectfighter.SelectFighter), # Handles the fighter select screen
+	('/process_fighter', processfighter.ProcessFighter), # Handles the process for creating a fighter
+	#('/wait_match', waitmatch.WaitMatch), # Handles the match waiting screen
+	#('/find_match', findmatch.FindMatch), # Handles the process of finding a match
 	#('/fight', fight.Fight), # Handles the battle screen
-	#('/processfight', processfight.ProcessFight), # Handles all the updates for a battle
+	#('/process_fight', processfight.ProcessFight), # Handles all the updates for a battle
 	], debug=True)

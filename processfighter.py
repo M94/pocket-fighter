@@ -7,5 +7,5 @@ class ProcessFighter(webapp2.RequestHandler):
 	def post(self):
 		fighter_name = self.request.get('fighter_name')
 		uid = self.request.get('uid')
-		self.response.out.write('Player ' + uid + 'chooses ' + fighter_name)
+		self.response.out.write('Player ' + uid + ' chooses ' + fighter_name)
 		
