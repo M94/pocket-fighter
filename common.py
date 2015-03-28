@@ -46,8 +46,7 @@ class LinkedList:
             new_node.previous = self.tail
             self.tail = new_node
         self.length += 1
-
-    def send_players (self):
+    def send_player (self):
         """pre: self.size() > 0
         post: removes and returns the front item"""
         item = self.head
@@ -60,25 +59,3 @@ class LinkedList:
         return self.length
     def front(self):
         return self.head
-        
-play1 = raw_input('Please enter the names of player 1: ')
-play2 = raw_input('Please enter the names of player 2: ')
-play3 = raw_input('Please enter the names of player 3: ')
-play4 = raw_input('Please enter the names of player 4: ')
-
-my_list = LinkedList()
-my_list.add(play1)
-my_list.add(play2)
-my_list.add(play3)
-my_list.add(play4)
-print ("The size of queue before game starts " + str(my_list.size()))
-
-
-player_one=my_list.send_players()
-player_two=my_list.send_players()
-
-
-print ("The size of queue after game starts " + str(my_list.size()))
-print player_one
-print player_two
-#End of queued linked list.
