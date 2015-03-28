@@ -1,18 +1,17 @@
 import webapp2
 
 import common
-#import processfighter
 import selectfighter
-#import waitmatch
-#import findmatch
-#import fight
-#import processfight
+import waitmatch
+import fight
+import processfight
+import time
 
 class Main:
 	def __init__(self):
 		self.uid = 0
-		self.waitlist = []
-
+		self.wait_list = []
+		
 main = Main()
 		
 class MainPage(webapp2.RequestHandler):
@@ -30,33 +29,31 @@ class ProcessFighter(webapp2.RequestHandler):
 	def post(self):
 		fighter_name = self.request.get('fighter_name')
 		uid = self.request.get('uid')
-		main.waitlist.append(uid)
+		main.wait_list.append(uid)
 		self.response.out.write('Player ' + uid + ' chooses ' + fighter_name)
+		common.render_template(self, 'wait_match.html', {
+		'uid': uid
+		})
+		
 		
 class FindMatch(webapp2.RequestHandler):
 	def get(self):
 		self.response.out.write('User id not specified')
 	def post(self):
 		uid = self.request.get('uid')
-		response = 0 # no match found
-		try:
-			main.waitlist.index(uid) 
-			for other_uid in wait.list:
-				if uid != other_uid:
-					main.waitlist.pop(uid)
-					main.waitlist.pop(other_uid)
-					response = 1 # match found
-		except:
-			response = -1 # error, player not in waitlist
-		
-		self.out.response.write(response)
+		response = -1 # no match found
+		for other_uid in main.wait_list:
+			if uid != other_uid:
+				response = 0 # match id
+				return self.response.out.write(response)
+		self.response.out.write(response)
 		
 app = webapp2.WSGIApplication([
 	('/', MainPage),
 	('/select_fighter', selectfighter.SelectFighter), # Handles the fighter select screen
-	('/process_fighter', ProcessFighter), # Handles the process for creating a fighter
-	#('/wait_match', waitmatch.WaitMatch), # Handles the match waiting screen
+	('/process_fighter', ProcessFighter), # Handles the process for creating a fighter and adding player to waitlist
+	('/wait_match', waitmatch.WaitMatch), # Handles the match waiting screen
 	('/find_match', FindMatch), # Handles the process of finding a match
-	#('/fight', fight.Fight), # Handles the battle screen
-	#('/process_fight', processfight.ProcessFight), # Handles all the updates for a battle
+	('/fight', fight.Fight), # Handles the battle screen
+	('/process_fight', processfight.ProcessFight), # Handles all the updates for a battle
 	], debug=True)

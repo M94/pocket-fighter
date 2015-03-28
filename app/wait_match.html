@@ -21,18 +21,8 @@
 		
 		}
 		function accept_match() {
-				
-		
-			var xmlHttp = createXmlHttp();
-			
-
-			var param = document.getElementById("uid");
-			xmlHttp.open("POST", '/fight', true); // Set up link for post request
-			xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-			xmlHttp.send(param); // Send parameters as post request
-			
-			
-			
+			var form = document.getElementById('form')
+			form.submit()	
 		}
 		function ajax() {
 				
@@ -42,11 +32,12 @@
 			xmlHttp.onreadystatechange = function() {
 			
 				if (xmlHttp.readyState == 4) {
-					if (xmlHttp.responseText == '0') {
+					console.log(xmlHttp.responseText)
+					if (xmlHttp.responseText == -1) {
 						//no match found, do nothing?
 						
 					}
-					else if(xml.Http.responseText == '1') {
+					else {
 						if (confirm("Accept Match?") == true) {
 								//Send match id?
 								accept_match();
@@ -90,8 +81,11 @@
     </head>
     <body onload="first()" class="center">
 		<p>Waiting for match...</p>
-        <img id="loader" src="media/matchloader.gif">
+        <img id="loader" src="app/media/matchloader.gif">
         <canvas id="ani"></canvas>
+		<form action="fight" id="form" method="POST">
+			<input id="uid" name="uid" type="hidden" value="{{uid}}">
+		</form>
     </body>
 
 
