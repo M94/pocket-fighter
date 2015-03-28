@@ -20,7 +20,20 @@
 		IntervalId = setInterval(ajax, 500);
 		
 		}
+		function accept_match() {
+				
 		
+			var xmlHttp = createXmlHttp();
+			
+
+			var param = document.getElementById("uid");
+			xmlHttp.open("POST", '/fight', true); // Set up link for post request
+			xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+			xmlHttp.send(param); // Send parameters as post request
+			
+			
+			
+		}
 		function ajax() {
 				
 		
@@ -35,7 +48,8 @@
 					}
 					else if(xml.Http.responseText == '1') {
 						if (confirm("Accept Match?") == true) {
-							//goto match
+								//Send match id?
+								accept_match();
 						} else {
 							//return to home screen
 							window.location.href ="/";

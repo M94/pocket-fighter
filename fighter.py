@@ -16,6 +16,15 @@ class Fighter:
 		self.current_hp -= dmg
 	}	
 	
+	def attack(self, f2, move) {
+	damage = self.att+move.get_damage()
+	f2.take_damage(damage)
+	}
+	
+	def is_alive(self) {
+	return self.alive
+	}
+	
 	def update(self) {
 		if(self.current_hp < 0) {
 		self.alive = false
