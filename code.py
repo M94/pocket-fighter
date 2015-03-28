@@ -1,30 +1,34 @@
-import os
 import webapp2
 
-from google.appengine.ext.webapp import template
+import common
+import processfighter
+import selectfighter
+#import waitmatch
+#import findmatch
+#import fight
+#import processfight
 
-def render_template(handler, templatename, templatevalues):
-	path = os.path.join(os.path.dirname(__file__), 'app/' + templatename)
-	html = template.render(path, templatevalues)
-	handler.response.out.write(html)
+class Main:
+	def __init__(self):
+		self.uid = 0
 
+main = Main()
+		
 class MainPage(webapp2.RequestHandler):
 	def get(self): 
+		main.uid = (main.uid + 1) % 2
 		welcome_msg = 'Welcome to Pocket Fighter!'
-		render_template(self, 'main.html', {
-		'welcome_msg':welcome_msg
+		common.render_template(self, 'main.html', {
+		'welcome_msg': welcome_msg,
+		'uid': main.uid
 		})
-		
-class ProcessFighter(webapp2.RequestHandler)
-	def post(self):
-		fighter_name = self.request.get('fighter_name')
 		
 app = webapp2.WSGIApplication([
 	('/', MainPage),
-	('selectfighter', SelectFighter), # Handles the fighter select screen
-	('processfighter', ProcessFighter), # Handles the process for creating a fighter
-	('waitmatch', WaitMatch), # Handles the match waiting screen
-	('findmatch', FindMatch), # Handles the process of finding a match
-	('fight', Fight), # Handles the battle screen
-	('processfight', ProcessFight), # Handles all the updates for a battle
+	('/selectfighter', selectfighter.SelectFighter), # Handles the fighter select screen
+	('/processfighter', processfighter.ProcessFighter), # Handles the process for creating a fighter
+	#('/waitmatch', waitmatch.WaitMatch), # Handles the match waiting screen
+	#('/findmatch', findmatch.FindMatch), # Handles the process of finding a match
+	#('/fight', fight.Fight), # Handles the battle screen
+	#('/processfight', processfight.ProcessFight), # Handles all the updates for a battle
 	], debug=True)
