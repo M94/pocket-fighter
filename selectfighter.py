@@ -6,7 +6,7 @@ class SelectFighter(webapp2.RequestHandler):
 		self.response.out.write('User id not specified')
 	def post(self):
 		uid = self.request.get('uid')
-		common.render_template(self, 'main.html', {
+		common.render_template(self, 'selectFighter.html', {
 		'uid': uid
 		})
 		
