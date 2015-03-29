@@ -9,8 +9,8 @@ body{
     background: #34696f;
     border: 2px solid rgba(33, 68, 72, 0.59);
 	position: absolute;
-	left:50px;
-	bottom:45px;
+	left:3%;
+	bottom:5%;
      
 	/*Change button color here.*/
     color: rgb(0, 0, 0);
@@ -37,8 +37,8 @@ body{
     background: #34696f;
     border: 2px solid rgba(33, 68, 72, 0.59);
 	position: absolute;
-	left: 388px;
-	bottom:45px;
+	left: 20.4%;
+	bottom:5%;
      
     /*Change button color here.*/
     color: rgb(0, 0, 0);
@@ -65,8 +65,8 @@ body{
     background: #34696f;
     border: 2px solid rgba(33, 68, 72, 0.59);
 	position: absolute;
-	left:725px;
-	bottom:45px;
+	left:37.8%;
+	bottom:5%;
      
     /*Change button color here.*/
     color: rgb(0, 0, 0);
@@ -93,8 +93,8 @@ body{
     background: #34696f;
     border: 2px solid rgba(33, 68, 72, 0.59);
 	position: absolute;
-	left:1060px;
-	bottom:45px;
+	left:55%;
+	bottom:5%;
      
     /*Change button color here.*/
     color: rgb(0, 0, 0);
@@ -121,8 +121,8 @@ body{
     background: #34696f;
     border: 2px solid rgba(33, 68, 72, 0.59);
 	position: absolute;
-	right: 115px;
-	bottom:18px;
+	right: 5.8%;
+	bottom:2%;
      
     /*Change button color here.*/
     color: rgb(0, 0, 0);
@@ -151,8 +151,8 @@ body{
 	height: 1em;
 	width: 21em;
 	vertical-align: -0.2em;
-	right: 56px;
-	bottom: 261px;
+	right: 3.2%;
+	bottom: 28.2%;
 }
 /*Enemy health*/
 .health2{
@@ -163,28 +163,28 @@ body{
 	height: 1em;
 	width: 21em;
 	vertical-align: -0.2em;
-	left: 132px;
-	top: 254px;
-}
-/*Our name*/
-.name1{
-	position:absolute;
-	top:110px;
-	left:75px;
-	text-transform:uppercase;
-	font-size:60px;
+	left: 6.6%;
+	top: 27.2%;
 }
 /*Enemy name*/
 .name2{
 	position:absolute;
-	right:325px;
-	bottom:250px;
+	top:12.5%;
+	left:4.2%;
 	text-transform:uppercase;
-	font-size:60px;
+	font-size:175%;
+}
+/*Our name*/
+.name1{
+	position:absolute;
+	right:18.5%;
+	bottom:27.2%;
+	text-transform:uppercase;
+	font-size:175%;
 }
 /*Enemy Photo*/
 .photo2{
-	top: 150px;
+	top: 16%;
 	float:right;
 	position: absolute;
 }
@@ -192,19 +192,19 @@ body{
 .photo1{
 	float:left;
 	position: absolute;
-	top: 340px;
+	top: 37%;
 }	
 /*Extra level thing for any purpose later.*/
 .extra2{
 	position: absolute;
-	top: 180px;
-	left:697px;
-	font-size: 30px;
+	top: 19.5%;
+	left: 35.7%;
+	font-size: 100%;
 }
 /*Extra level thing for any purpose later.*/
 .extra1{
 	position: absolute;
-	bottom: 274px;
-	right:55px;
-	font-size: 30px;
+	bottom: 29%;
+	right: 3.1%;
+	font-size: 100%;
 }	
