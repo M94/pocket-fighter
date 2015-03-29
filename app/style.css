@@ -4,8 +4,8 @@ body{
 
 .button1 {
     display: block;
-    height: 100px;
-    width: 300px;
+    height: 10%;
+    width: 15%;
     background: #34696f;
     border: 2px solid rgba(33, 68, 72, 0.59);
 	position: absolute;
@@ -15,16 +15,16 @@ body{
 	/*Change button color here.*/
     color: rgb(0, 0, 0);
     text-align: center;
-    font: bold 1.6em/100px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    font: bold 160%/170% "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
     background: -webkit-linear-gradient(top, #ffffff, #ffffff);
     background: -moz-linear-gradient(top, #ffffff, #ffffff);
     background: -o-linear-gradient(top, #ffffff, #ffffff);
     background: -ms-linear-gradient(top, #ffffff, #ffffff);
     background: linear-gradient(top, #ffffff, #ffffff);    
-    -webkit-border-radius: 50px;
-    -khtml-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;    
+    -webkit-border-radius: 20%;
+    -khtml-border-radius: 20%;
+    -moz-border-radius: 20%;
+    border-radius: 20%;    
     -webkit-box-shadow: 0 8px 0 #1b383b;
     -moz-box-shadow: 0 8px 0 #1b383b;
     box-shadow: 0 8px 0 #1b383b;   
@@ -32,8 +32,8 @@ body{
 }
 .button2 {
     display: block;
-    height: 100px;
-    width: 300px;
+    height: 10%;
+    width: 15%;
     background: #34696f;
     border: 2px solid rgba(33, 68, 72, 0.59);
 	position: absolute;
@@ -43,25 +43,25 @@ body{
     /*Change button color here.*/
     color: rgb(0, 0, 0);
     text-align: center;
-    font: bold 1.6em/100px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;    
+    font: bold 160%/170% "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;    
     background: -webkit-linear-gradient(top, #ffffff, #ffffff);
     background: -moz-linear-gradient(top, #ffffff, #ffffff);
     background: -o-linear-gradient(top, #ffffff, #ffffff);
     background: -ms-linear-gradient(top, #ffffff, #ffffff);
     background: linear-gradient(top, #ffffff, #ffffff);    
-    -webkit-border-radius: 50px;
-    -khtml-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;   
+    -webkit-border-radius: 20%;
+    -khtml-border-radius: 20%;
+    -moz-border-radius: 20%;
+    border-radius: 20%;    
     -webkit-box-shadow: 0 8px 0 #1b383b;
     -moz-box-shadow: 0 8px 0 #1b383b;
-    box-shadow: 0 8px 0 #1b383b;     
+    box-shadow: 0 8px 0 #1b383b;   
     text-shadow: 0 2px 2px rgba(255, 255, 255, 0.2); 
 }
 .button3 {
     display: block;
-    height: 100px;
-    width: 300px;
+    height: 10%;
+    width: 15%;
     background: #34696f;
     border: 2px solid rgba(33, 68, 72, 0.59);
 	position: absolute;
@@ -71,25 +71,25 @@ body{
     /*Change button color here.*/
     color: rgb(0, 0, 0);
     text-align: center;
-    font: bold 1.6em/100px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    font: bold 160%/170% "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
     background: -webkit-linear-gradient(top, #ffffff, #ffffff);
     background: -moz-linear-gradient(top, #ffffff, #ffffff);
     background: -o-linear-gradient(top, #ffffff, #ffffff);
     background: -ms-linear-gradient(top, #ffffff, #ffffff);
     background: linear-gradient(top, #ffffff, #ffffff);   
-    -webkit-border-radius: 50px;
-    -khtml-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;  
+    -webkit-border-radius: 20%;
+    -khtml-border-radius: 20%;
+    -moz-border-radius: 20%;
+    border-radius: 20%;    
     -webkit-box-shadow: 0 8px 0 #1b383b;
     -moz-box-shadow: 0 8px 0 #1b383b;
-    box-shadow: 0 8px 0 #1b383b;    
+    box-shadow: 0 8px 0 #1b383b;   
     text-shadow: 0 2px 2px rgba(255, 255, 255, 0.2); 
 }
 .button4 {
     display: block;
-    height: 100px;
-    width: 300px;
+    height: 10%;
+    width: 15%;
     background: #34696f;
     border: 2px solid rgba(33, 68, 72, 0.59);
 	position: absolute;
@@ -99,25 +99,25 @@ body{
     /*Change button color here.*/
     color: rgb(0, 0, 0);
     text-align: center;
-    font: bold 1.6em/100px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    font: bold 160%/170% "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
     background: -webkit-linear-gradient(top, #ffffff, #ffffff);
     background: -moz-linear-gradient(top, #ffffff, #ffffff);
     background: -o-linear-gradient(top, #ffffff, #ffffff);
     background: -ms-linear-gradient(top, #ffffff, #ffffff);
     background: linear-gradient(top, #ffffff, #ffffff);
-    -webkit-border-radius: 50px;
-    -khtml-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;
+    -webkit-border-radius: 20%;
+    -khtml-border-radius: 20%;
+    -moz-border-radius: 20%;
+    border-radius: 20%;    
     -webkit-box-shadow: 0 8px 0 #1b383b;
     -moz-box-shadow: 0 8px 0 #1b383b;
-    box-shadow: 0 8px 0 #1b383b;
+    box-shadow: 0 8px 0 #1b383b;   
     text-shadow: 0 2px 2px rgba(255, 255, 255, 0.2); 
 }
 .forfeit_button {
     display: block;
-    height: 100px;
-    width: 300px;
+    height: 10%;
+    width: 15%;
     background: #34696f;
     border: 2px solid rgba(33, 68, 72, 0.59);
 	position: absolute;
@@ -127,19 +127,19 @@ body{
     /*Change button color here.*/
     color: rgb(0, 0, 0);
     text-align: center;
-    font: bold 1.6em/100px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    font: bold 160%/170% "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
     background: -webkit-linear-gradient(top, #ffffff, #ffffff);
     background: -moz-linear-gradient(top, #ffffff, #ffffff);
     background: -o-linear-gradient(top, #ffffff, #ffffff);
     background: -ms-linear-gradient(top, #ffffff, #ffffff);
     background: linear-gradient(top, #ffffff, #ffffff);
-    -webkit-border-radius: 50px;
-    -khtml-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;
+    -webkit-border-radius: 20%;
+    -khtml-border-radius: 20%;
+    -moz-border-radius: 20%;
+    border-radius: 20%;    
     -webkit-box-shadow: 0 8px 0 #1b383b;
     -moz-box-shadow: 0 8px 0 #1b383b;
-    box-shadow: 0 8px 0 #1b383b;
+    box-shadow: 0 8px 0 #1b383b;   
     text-shadow: 0 2px 2px rgba(255, 255, 255, 0.2); 
 }
 /*Our health*/
@@ -148,9 +148,9 @@ body{
 	background-color: whiteSmoke;
 	-webkit-appearance: progress-bar;
 	display: inline-box;
-	height: 1em;
-	width: 21em;
-	vertical-align: -0.2em;
+	height: 3.5%;
+	width: 35%;
+	vertical-align: 1%;
 	right: 3.2%;
 	bottom: 28.2%;
 }
@@ -160,9 +160,9 @@ body{
 	background-color: whiteSmoke;
 	-webkit-appearance: progress-bar;
 	display: inline-box;
-	height: 1em;
-	width: 21em;
-	vertical-align: -0.2em;
+	height: 3.5%;
+	width: 35%;
+	vertical-align: 1%;
 	left: 6.6%;
 	top: 27.2%;
 }
