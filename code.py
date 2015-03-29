@@ -10,11 +10,10 @@ from google.appengine.ext import ndb
 		
 class MainPage(webapp2.RequestHandler):
 	def get(self): 
-		n_players = len(database.Player.query().fetch())
+		#n_players = len(database.Player.query().fetch())
 		welcome_msg = 'Welcome to Pocket Fighter!'
 		common.render_template(self, 'main.html', {
 		'welcome_msg': welcome_msg,
-		'n_players': n_players
 		})
 		
 class SelectFighter(webapp2.RequestHandler):
