@@ -34,7 +34,7 @@ class ProcessFighter(webapp2.RequestHandler):
 		player = ndb.Key(urlsafe=uid).get()
 		player.fighter = fi
 		player.status = 1
-		player.put()
+		uid = player.put().urlsafe()
 		common.render_template(self, 'process_fighter.html', {
 		'uid': uid,
 		'fighter_name': player.fighter.name
