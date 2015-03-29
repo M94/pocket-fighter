@@ -20,10 +20,10 @@
 		IntervalId = setInterval(ajax, 500);
 		
 		}
+		// Go to battle screen
 		function accept_match(match_id) {
-			var mid = document.getElementById('match_id')
+			var mid = document.getElementById('mid')
 			mid.value = match_id
-			console.log(mid.value)
 			var form = document.getElementById('form')
 			form.submit()	
 		}
@@ -35,19 +35,18 @@
 			xmlHttp.onreadystatechange = function() {
 			
 				if (xmlHttp.readyState == 4) {
-					console.log(xmlHttp.responseText)
 					if (xmlHttp.responseText == 0) {
 						//no match found, do nothing?
 						
 					}
 					else {
-						accept_match(xmlHttp.responseText)
+						accept_match(xmlHttp.responseText);
 					}
 					
 				}
 				
 			}
-			var param = 'uid=' + escape(document.getElementById('uid').value)
+			var param = 'uid=' + escape(document.getElementById('uid').value);
 			xmlHttp.open("POST", '/find_match', true); // Set up link for post request
 			xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 			xmlHttp.send(param); // Send parameters as post request
@@ -81,7 +80,7 @@
         <canvas id="ani"></canvas>
 		<form action="fight" id="form" method="POST">
 			<input id="uid" name="uid" type="hidden" value="{{uid}}">
-			<input id="match_id" name="match_id" type="hidden">
+			<input id="mid" name="mid" type="hidden">
 		</form>
     </body>
 

@@ -1,0 +1,95 @@
+body{
+		background-image: url("media/template.jpg");
+}
+
+.health_menu1 {
+	position:absolute;
+	bottom: 3%;
+	right: 3%;
+}
+
+.health_menu2 {
+	position:absolute;
+	top: 3%;
+	left: 3%;
+}
+
+.button_menu {
+	bottom: 0%;
+	position:absolute;
+	text-align:center;
+	background: #ffffff;
+}
+
+.button {
+    display: block;
+    height: 80px;
+    width: 240px;
+    background: #34696f;
+    border: 2px solid rgba(33, 68, 72, 0.59);
+	float: left;
+	/*Change button color here.*/
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font: bold 1.6em/100px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    background: -webkit-linear-gradient(top, #ffffff, #ffffff);
+    background: -moz-linear-gradient(top, #ffffff, #ffffff);
+    background: -o-linear-gradient(top, #ffffff, #ffffff);
+    background: -ms-linear-gradient(top, #ffffff, #ffffff);
+    background: linear-gradient(top, #ffffff, #ffffff);    
+    -webkit-border-radius: 50px;
+    -khtml-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;    
+    -webkit-box-shadow: 0 8px 0 #1b383b;
+    -moz-box-shadow: 0 8px 0 #1b383b;
+    box-shadow: 0 8px 0 #1b383b;   
+    text-shadow: 0 2px 2px rgba(255, 255, 255, 0.2); 
+}
+
+/*Our health*/
+.health1{
+	background-color: whiteSmoke;
+	-webkit-appearance: progress-bar;
+	display: inline-box;
+	height: 1em;
+	width: 21em;
+}
+/*Enemy health*/
+.health2{;
+	background-color: whiteSmoke;
+	-webkit-appearance: progress-bar;
+	display: inline-box;
+	height: 1em;
+	width: 21em;
+}
+/*Enemy name*/
+.name2{
+	text-transform:uppercase;
+	font-size:175%;
+}
+/*Our name*/
+.name1{
+	text-transform:uppercase;
+	font-size:175%;
+}
+/*Our photo*/
+.photo1{
+	position: absolute;
+	left: 0%;
+	top: 35%;
+}	
+/*Enemy Photo*/
+.photo2{
+	top: 0%;
+	float:right;
+	position: absolute;
+}
+/*Extra level thing for any purpose later.*/
+.extra2{
+	font-size: 100%;
+}
+/*Extra level thing for any purpose later.*/
+.extra1{
+	font-size: 100%;
+}	

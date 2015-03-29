@@ -3,39 +3,45 @@
 <head>
 	<title> Pocket Fighters </title>
 </head>
-	<link rel="stylesheet" href="app/style.css">
+	<link rel="stylesheet" href="scripts/style.css">
 <body>
-	
-	<h1> Pocket Fighter Battle! </h1>
-	<p> To play, choose one of the 4 abilities to attack the other opponent. The first person's pocket fighter who reaches 0 health loses. </p>
-
-	<!--The 4 buttons to attack and the forfeit button. Links need to be changed 
-	from pokemon to their respective needs. Attack names should be a variable for 
-	different celebs to have different types of attacks.-->
-	<a href="media/pokemon.jpg" class="button1">Attack 1</a>
-	<a href="media/pokemon.jpg" class="button2">Attack 2</a>
-	<a href="media/pokemon.jpg" class="button3">Attack 3</a>
-	<a href="media/pokemon.jpg" class="button4">Attack 4</a>
-	<a href="media/pokemon.jpg" class="forfeit_button">Forfeit</a>
-	
-	<!--The title names and levels arounds the health bar. Names need to be variables
-	to be different celebs. Levels needs to be changed to whatever we want to use it for.-->
-	<p id = "fighter1" class = "name1"> {{match.player1.fighter.name}} </p>
-	<p id = "fighter2" class = "name2"> {{match.player2.fighter.name}} </p>
-	<p class = "extra1"> Level 11 </p>
-	<p class = "extra2"> Level 10 </p>
 	
 	<!--The scrolling photos and their speed. img should be a variable for any 
 	celebrity image.-->
-	<div id="photos">
-		<marquee behavior="slide" class = "photo2" scrollamount = "120" direction="right"><img src="media/kanye.jpg" width="500" height="350" alt="Player 1" /></marquee>
-		<marquee behavior="slide" class = "photo1" scrollamount = "120" direction="left"><img src="media/taylor.jpg" width="500" height="350" alt="Player 2" /></marquee>
+	<marquee behavior="slide" class = "photo1" scrollamount = "100%" direction="left"><img id="photo1" src="media/kanye.jpg" width="400" height="400" alt="Player 1" /></marquee>
+	<marquee behavior="slide" class = "photo2" scrollamount = "100%" direction="right"><img id="photo2"src="media/taylor.jpg" width="400" height="400" alt="Player 2" /></marquee>
+
+	<!--Health menu for fighter 1-->
+	<div class="health_menu1" style="bottom:0%"> 
+		<p id = "fighter1" class = "name1"> {{match.player1.fighter.name}} </p>
+		<progress id="health1" value="50" max="100" class = "health1"></progress>
+		<p class = "extra1"> Level 11 </p>
 	</div>
 	
-	<!--Here are the health bars. Change values variables for changes in health.-->
-	<progress id="health1" value="50" max="100" class = "health1"></progress>
-	<progress id="health2" value="35" max="100" class = "health2"></progress>
+	<!--Health menu for fighter 2-->
+	<div class="health_menu2"> 
+		<p id = "fighter2" class = "name2"> {{match.player2.fighter.name}} </p>
+		<progress id="health2" value="35" max="100" class = "health2"></progress>
+		<p class = "extra2"> Level 10 </p>
+	</div>
+	
+	<!--The 4 buttons to attack and the forfeit button. Links need to be changed 
+	from pokemon to their respective needs. Attack names should be a variable for 
+	different celebs to have different types of attacks.-->
+	<div id="button_menu" class="button_menu">
+		<a  id="attack1" onclick="ajax('attack1')" class="button">Attack 1</a>
+		<a  id="attack2" onclick="ajax('attack2')" class="button">Attack 2</a>
+		<br>
+		<a  id="attack3" onclick="ajax('attack3')" class="button">Attack 3</a>
+		<a  id="forfeit" onclick="ajax('forfeit')" class="button">Forfeit</a>
+		<p id="message"></p>
+	</div>
+	
+	<input type="hidden" id="uid" type="hidden" value="{{uid}}">
+	<input type="hidden" id="mid" type="hidden" value="{{mid}}">
 
 </body>
-
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="scripts/fight.js"></script>
 </html>

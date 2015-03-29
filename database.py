@@ -17,6 +17,7 @@ class Player(ndb.Model):
 class Match(ndb.Model):
 	player1 = ndb.StructuredProperty(Player)
 	player2 = ndb.StructuredProperty(Player)
-
+	# 1 = player 1's turn, 2 = player 2's turn
+	turn = ndb.IntegerProperty(default=1) 
 
 	

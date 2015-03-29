@@ -8,6 +8,9 @@ handlers:
 - url: /media
   static_dir: app/media
   
+- url: /scripts
+  static_dir: app/scripts
+  
 - url: /app
   static_dir: app/
   
