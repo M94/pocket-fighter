@@ -62,7 +62,7 @@ class FindMatch(webapp2.RequestHandler):
 			for other_player in players:
 				if player != other_player and other_player.status == 1:
 					# Found a suitable opponent, create a new match
-					# Player 1 = host, player 2 = client
+					# Player 1 = host (creator of the match), player 2 = client
 					match = database.Match(player1=player, player2=other_player)
 					match_key = match.put()
 					other_player.match_key = match_key # Add match key to other player to notify him

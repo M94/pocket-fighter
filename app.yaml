@@ -5,8 +5,11 @@ api_version: 1
 threadsafe: false
 
 handlers:
+- url: /media
+  static_dir: app/media
+  
 - url: /app
-  static_dir: static
+  static_dir: app/
   
 - url: /.*
   script: code.app

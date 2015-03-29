@@ -1,5 +1,41 @@
+<!doctype html>
 <html>
-<h1>Match {{match_id}}</h1>
-<h2>Show user interface for player {{uid}}</h2>
+<head>
+	<title> Pocket Fighters </title>
+</head>
+	<link rel="stylesheet" href="app/style.css">
+<body>
+	
+	<h1> Pocket Fighter Battle! </h1>
+	<p> To play, choose one of the 4 abilities to attack the other opponent. The first person's pocket fighter who reaches 0 health loses. </p>
+
+	<!--The 4 buttons to attack and the forfeit button. Links need to be changed 
+	from pokemon to their respective needs. Attack names should be a variable for 
+	different celebs to have different types of attacks.-->
+	<a href="media/pokemon.jpg" class="button1">Attack 1</a>
+	<a href="media/pokemon.jpg" class="button2">Attack 2</a>
+	<a href="media/pokemon.jpg" class="button3">Attack 3</a>
+	<a href="media/pokemon.jpg" class="button4">Attack 4</a>
+	<a href="media/pokemon.jpg" class="forfeit_button">Forfeit</a>
+	
+	<!--The title names and levels arounds the health bar. Names need to be variables
+	to be different celebs. Levels needs to be changed to whatever we want to use it for.-->
+	<p id = "fighter1" class = "name1"> Taylor Swift </p>
+	<p id = "fighter2" class = "name2"> Kanye West </p>
+	<p class = "extra1"> Level 11 </p>
+	<p class = "extra2"> Level 10 </p>
+	
+	<!--The scrolling photos and their speed. img should be a variable for any 
+	celebrity image.-->
+	<div id="photos">
+		<marquee behavior="slide" class = "photo2" scrollamount = "120" direction="right"><img src="media/kanye.jpg" width="500" height="350" alt="Player 1" /></marquee>
+		<marquee behavior="slide" class = "photo1" scrollamount = "120" direction="left"><img src="media/taylor.jpg" width="500" height="350" alt="Player 2" /></marquee>
+	</div>
+	
+	<!--Here are the health bars. Change values variables for changes in health.-->
+	<progress id="health1" value="50" max="100" class = "health1"></progress>
+	<progress id="health2" value="35" max="100" class = "health2"></progress>
+
+</body>
 
 </html>
