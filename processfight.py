@@ -15,8 +15,13 @@ class Fight:
 			return 'stuff for ' + uid
 		return 'error'
 	
-fight = Fight(0, 1)
+fights = Fights()
 	
+def CreateFight(uid1, uid2):
+	fight = Fight(uid1, uid2)
+	mid = uid1 + uid2
+	fights.insert(mid, fight)
+	return mid
 		
 class ProcessFight(webapp2.RequestHandler):	
 	def post(self):
