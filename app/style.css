@@ -1,0 +1,210 @@
+body{
+		background-image: url("template.jpg");
+	}
+
+.button1 {
+    display: block;
+    height: 100px;
+    width: 300px;
+    background: #34696f;
+    border: 2px solid rgba(33, 68, 72, 0.59);
+	position: absolute;
+	left:50px;
+	bottom:45px;
+     
+	/*Change button color here.*/
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font: bold 1.6em/100px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    background: -webkit-linear-gradient(top, #ffffff, #ffffff);
+    background: -moz-linear-gradient(top, #ffffff, #ffffff);
+    background: -o-linear-gradient(top, #ffffff, #ffffff);
+    background: -ms-linear-gradient(top, #ffffff, #ffffff);
+    background: linear-gradient(top, #ffffff, #ffffff);    
+    -webkit-border-radius: 50px;
+    -khtml-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;    
+    -webkit-box-shadow: 0 8px 0 #1b383b;
+    -moz-box-shadow: 0 8px 0 #1b383b;
+    box-shadow: 0 8px 0 #1b383b;   
+    text-shadow: 0 2px 2px rgba(255, 255, 255, 0.2); 
+}
+.button2 {
+    display: block;
+    height: 100px;
+    width: 300px;
+    background: #34696f;
+    border: 2px solid rgba(33, 68, 72, 0.59);
+	position: absolute;
+	left: 388px;
+	bottom:45px;
+     
+    /*Change button color here.*/
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font: bold 1.6em/100px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;    
+    background: -webkit-linear-gradient(top, #ffffff, #ffffff);
+    background: -moz-linear-gradient(top, #ffffff, #ffffff);
+    background: -o-linear-gradient(top, #ffffff, #ffffff);
+    background: -ms-linear-gradient(top, #ffffff, #ffffff);
+    background: linear-gradient(top, #ffffff, #ffffff);    
+    -webkit-border-radius: 50px;
+    -khtml-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;   
+    -webkit-box-shadow: 0 8px 0 #1b383b;
+    -moz-box-shadow: 0 8px 0 #1b383b;
+    box-shadow: 0 8px 0 #1b383b;     
+    text-shadow: 0 2px 2px rgba(255, 255, 255, 0.2); 
+}
+.button3 {
+    display: block;
+    height: 100px;
+    width: 300px;
+    background: #34696f;
+    border: 2px solid rgba(33, 68, 72, 0.59);
+	position: absolute;
+	left:725px;
+	bottom:45px;
+     
+    /*Change button color here.*/
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font: bold 1.6em/100px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    background: -webkit-linear-gradient(top, #ffffff, #ffffff);
+    background: -moz-linear-gradient(top, #ffffff, #ffffff);
+    background: -o-linear-gradient(top, #ffffff, #ffffff);
+    background: -ms-linear-gradient(top, #ffffff, #ffffff);
+    background: linear-gradient(top, #ffffff, #ffffff);   
+    -webkit-border-radius: 50px;
+    -khtml-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;  
+    -webkit-box-shadow: 0 8px 0 #1b383b;
+    -moz-box-shadow: 0 8px 0 #1b383b;
+    box-shadow: 0 8px 0 #1b383b;    
+    text-shadow: 0 2px 2px rgba(255, 255, 255, 0.2); 
+}
+.button4 {
+    display: block;
+    height: 100px;
+    width: 300px;
+    background: #34696f;
+    border: 2px solid rgba(33, 68, 72, 0.59);
+	position: absolute;
+	left:1060px;
+	bottom:45px;
+     
+    /*Change button color here.*/
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font: bold 1.6em/100px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    background: -webkit-linear-gradient(top, #ffffff, #ffffff);
+    background: -moz-linear-gradient(top, #ffffff, #ffffff);
+    background: -o-linear-gradient(top, #ffffff, #ffffff);
+    background: -ms-linear-gradient(top, #ffffff, #ffffff);
+    background: linear-gradient(top, #ffffff, #ffffff);
+    -webkit-border-radius: 50px;
+    -khtml-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    -webkit-box-shadow: 0 8px 0 #1b383b;
+    -moz-box-shadow: 0 8px 0 #1b383b;
+    box-shadow: 0 8px 0 #1b383b;
+    text-shadow: 0 2px 2px rgba(255, 255, 255, 0.2); 
+}
+.forfeit_button {
+    display: block;
+    height: 100px;
+    width: 300px;
+    background: #34696f;
+    border: 2px solid rgba(33, 68, 72, 0.59);
+	position: absolute;
+	right: 115px;
+	bottom:18px;
+     
+    /*Change button color here.*/
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font: bold 1.6em/100px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    background: -webkit-linear-gradient(top, #ffffff, #ffffff);
+    background: -moz-linear-gradient(top, #ffffff, #ffffff);
+    background: -o-linear-gradient(top, #ffffff, #ffffff);
+    background: -ms-linear-gradient(top, #ffffff, #ffffff);
+    background: linear-gradient(top, #ffffff, #ffffff);
+    -webkit-border-radius: 50px;
+    -khtml-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    -webkit-box-shadow: 0 8px 0 #1b383b;
+    -moz-box-shadow: 0 8px 0 #1b383b;
+    box-shadow: 0 8px 0 #1b383b;
+    text-shadow: 0 2px 2px rgba(255, 255, 255, 0.2); 
+}
+/*Our health*/
+.health1{
+	position: absolute;
+	background-color: whiteSmoke;
+	-webkit-appearance: progress-bar;
+	display: inline-box;
+	height: 1em;
+	width: 21em;
+	vertical-align: -0.2em;
+	right: 56px;
+	bottom: 261px;
+}
+/*Enemy health*/
+.health2{
+	position: absolute;
+	background-color: whiteSmoke;
+	-webkit-appearance: progress-bar;
+	display: inline-box;
+	height: 1em;
+	width: 21em;
+	vertical-align: -0.2em;
+	left: 132px;
+	top: 254px;
+}
+/*Our name*/
+.name1{
+	position:absolute;
+	top:110px;
+	left:75px;
+	text-transform:uppercase;
+	font-size:60px;
+}
+/*Enemy name*/
+.name2{
+	position:absolute;
+	right:325px;
+	bottom:250px;
+	text-transform:uppercase;
+	font-size:60px;
+}
+/*Enemy Photo*/
+.photo2{
+	top: 150px;
+	float:right;
+	position: absolute;
+}
+/*Our photo*/
+.photo1{
+	float:left;
+	position: absolute;
+	top: 340px;
+}	
+/*Extra level thing for any purpose later.*/
+.extra2{
+	position: absolute;
+	top: 180px;
+	left:697px;
+	font-size: 30px;
+}
+/*Extra level thing for any purpose later.*/
+.extra1{
+	position: absolute;
+	bottom: 274px;
+	right:55px;
+	font-size: 30px;
+}	
